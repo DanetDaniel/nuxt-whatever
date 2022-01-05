@@ -27,10 +27,16 @@
     >
       <ul class="nav-links-list">
         <li class="nav-links-item">
-          <NuxtLink to="/fun"> Fun </NuxtLink>
+          <NuxtLink
+            to="/fun"
+            @click="$store.commit.toggleMenuState"
+          > Fun </NuxtLink>
         </li>
         <li class="nav-links-item">
-          <NuxtLink to="/about"> About </NuxtLink>
+          <NuxtLink
+            to="/about"
+            @click="$store.commit.toggleMenuState"
+          > About </NuxtLink>
         </li>
       </ul>
     </div>
