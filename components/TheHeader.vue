@@ -23,7 +23,7 @@
     </nav>
     <div
       class="menu"
-      v-bind:class="{ active: isMenuActive }"
+      v-bind:class="{ active: $store.state.isMenuActive }"
     >
       <ul class="nav-links-list">
         <li class="nav-links-item">
@@ -36,22 +36,6 @@
     </div>
   </header>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      isMenuActive: false
-    }
-  },
-  methods: {
-    menuHandler() {
-      this.isMenuActive = !this.isMenuActive;
-      console.log('Button pressed');
-    }
-  }
-}
-</script>
 
 <style scoped>
 nav {

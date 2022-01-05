@@ -2,6 +2,7 @@
   <button
     @mouseenter="$store.commit('toggleIsHovered')"
     @mouseleave="$store.commit('toggleIsHovered')"
+    @click="$store.commit('toggleMenuState')"
   >
     <p class="button-text">menu</p>
     <div class="lines-container">
