@@ -2,6 +2,14 @@
   <h1>Hello World!</h1>
 </template>
 
+<script>
+export default {
+  head: {
+    title: "Home"
+  }
+}
+</script>
+
 <style>
 * {
   margin: 0;
