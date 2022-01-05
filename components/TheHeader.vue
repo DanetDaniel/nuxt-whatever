@@ -26,17 +26,17 @@
       v-bind:class="{ active: $store.state.isMenuActive }"
     >
       <ul class="nav-links-list">
-        <li class="nav-links-item">
-          <NuxtLink
-            to="/fun"
-            @click="$store.commit.toggleMenuState"
-          > Fun </NuxtLink>
+        <li
+          class="nav-links-item"
+          @click="$store.commit.toggleMenuState"
+        >
+          <NuxtLink to="/fun"> Fun </NuxtLink>
         </li>
-        <li class="nav-links-item">
-          <NuxtLink
-            to="/about"
-            @click="$store.commit.toggleMenuState"
-          > About </NuxtLink>
+        <li
+          class="nav-links-item"
+          @click="$store.commit.toggleMenuState"
+        >
+          <NuxtLink to="/about"> About </NuxtLink>
         </li>
       </ul>
     </div>
