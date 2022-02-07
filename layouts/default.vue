@@ -1,7 +1,6 @@
 <template>
   <div class="layout-base">
     <TheHeader />
-    <CustomCursor />
     <main>
       <Nuxt />
     </main>
